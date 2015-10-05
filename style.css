@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext-Bold.eot');
+	src: url('fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AvenirNext-Bold.woff') format('woff'),
+		url('fonts/AvenirNext-Bold.ttf')  format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+canvas {
+    display: block;
+}
