@@ -893,21 +893,21 @@ function startMenu() {
 	contextInfoBar.clearRect(0,0,400,100);
 	context.clearRect(0,0,400,600);
 
-	contextInfoBar.font = "18px Avenir Next";
-	contextInfoBar.fillText("Click the bugs before it reaches your food!",5,30);
-	contextInfoBar.font = "14px Avenir Next";
+	contextInfoBar.font = "bold 18px Avenir Next";
+	contextInfoBar.fillText("Click the bugs before it reaches your food!",15,30);
+	contextInfoBar.font = "bold 14px Avenir Next";
 	contextInfoBar.fillText("Created with vanilla JavaScript and HTML5 Canvas.",20,60);
 	contextInfoBar.fillText("Copyright Sean Han 2015.",100,80);
 
 	context.font = "bold 100px Avenir Next";
 	context.fillText("FOOD",30,130);
 	context.font = "bold 80px Avenir Next";
-	context.fillText("rescue",60,200);
+	context.fillText("rescue",75,200);
 
 	context.font = "bold 200px Avenir Next";
 	context.fillText("!",330,200);
 
-	context.font = "15px Avenir Next";
+	context.font = "bold 15px Avenir Next";
 	context.fillText("Level 1", 80,300);
 	context.beginPath();
 	context.arc(100,320,10,0,2*Math.PI);
@@ -922,7 +922,7 @@ function startMenu() {
 	context.fillText("Highscore:",150,400);
 	context.fillText(localStorage.highScore,170,420);
 
-	context.font = "30px Avenir Next";
+	context.font = "bold 30px Avenir Next";
 	context.fillText("START",145,500);
 	context.rect(120,455,150,70);
 	context.stroke();
@@ -990,7 +990,7 @@ function gameOverMenu(gameTimer) {
 		context.fillText("Game Over!",20,200);
 
 		//High Score
-		context.font = "30px Avenir Next";
+		context.font = "bold 30px Avenir Next";
 		if (levelOneScoreTrack > gameScore) {
 			context.fillText("Score: " + levelOneScoreTrack.toString(),150,300);
 		} else {
@@ -999,14 +999,14 @@ function gameOverMenu(gameTimer) {
 
 		// Restart
 		context.strokeStyle="#000000";
-		context.font = "30px Avenir Next";
+		context.font = "bold 30px Avenir Next";
 		context.fillText("Restart",65,500);
 		context.rect(40,455,150,70);
 		context.stroke();
 
 		// Quit
 		context.strokeStyle="#000000";
-		context.font = "30px Avenir Next";
+		context.font = "bold 30px Avenir Next";
 		context.fillText("Quit",255,500);
 		context.rect(225,455,125,70);
 		context.stroke();
