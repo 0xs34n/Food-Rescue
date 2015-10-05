@@ -922,13 +922,9 @@ function startMenu() {
 	context.fillText("Highscore:",150,400);
 	context.fillText(localStorage.highScore,170,420);
 
-<<<<<<< HEAD
-	context.font = "30px Avenir Next";
-	context.fillText("START",151,500);
-=======
+
 	context.font = "bold 30px Avenir Next";
 	context.fillText("START",145,500);
->>>>>>> master
 	context.rect(120,455,150,70);
 	context.stroke();
 
